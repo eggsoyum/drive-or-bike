@@ -6,22 +6,22 @@ if (age >= 16) {
     eligible_driver = game.ask("Press A if you have a license" + controller.A.isPressed())
     if (eligible_driver) {
         myCar = sprites.create(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . 3 3 3 3 3 3 3 3 . . . . 
-            . . . 3 d 3 3 3 3 3 3 c 3 . . . 
-            . . 3 c d 3 3 3 3 3 3 c c 3 . . 
-            . 3 c c d d d d d d 3 c c d 3 d 
-            . 3 c 3 a a a a a a a b c d 3 3 
-            . 3 3 a b b a b b b a a b d 3 3 
-            . 3 a b b b a b b b b a 3 3 3 3 
-            . a a 3 3 3 a 3 3 3 3 3 a 3 3 3 
-            . a a a a a a f a a a f a 3 d d 
-            . a a a a a a f a a f a a a 3 d 
-            . a a a a a a f f f a a a a a a 
-            . a f f f f a a a a f f f a a a 
-            . . f f f f f a a f f f f f a . 
-            . . . f f f . . . . f f f f . . 
-            . . . . . . . . . . . . . . . . 
+            . . . . . . . e e e e e . . . . 
+            . . . . . e e 2 2 2 2 2 e . . . 
+            . . . . e e 2 2 2 2 2 2 2 e . . 
+            . . . . e 9 4 2 2 2 2 2 4 b e . 
+            . . e e 9 9 4 4 2 2 2 2 4 9 b e 
+            . e 2 2 9 9 4 4 4 2 2 2 4 9 9 e 
+            e 2 2 2 9 9 2 4 4 4 4 4 2 9 9 e 
+            e 2 2 2 9 9 e e e e e e e 9 9 e 
+            e 2 2 2 9 b e b b b e b e b 9 e 
+            e 2 e e e e b b b b e b b e b e 
+            e e 3 3 e e 2 2 2 2 e 2 2 e e e 
+            e 3 3 e e e e e e e e e e e e e 
+            e e e e e e e e e e e e e e e e 
+            e e e e f f f e e e e f f f e e 
+            . e e f b c c f e e f b c c f . 
+            . . . . b b f . . . . b b f . . 
             `, SpriteKind.Player)
     } else {
         myBike = sprites.create(img`
